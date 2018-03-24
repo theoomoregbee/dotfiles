@@ -31,7 +31,7 @@ git submodule add http://github.com/tpope/vim-fugitive.git
 ```
 Using git hook to auto commit the submodule added using the `repo-name` like so `added ${repo_name} plugin`. So, anytime we decide to push we can push the new update 
 
-### Updating Plugins 
+### Managing Plugins 
 #### Single Update
 ```sh
 cd ~/.vim/bundle/${pluginName}
