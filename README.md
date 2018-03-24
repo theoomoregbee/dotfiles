@@ -8,7 +8,7 @@ Personal dotfiles
 	- `.bash_profile`
 	- `.zshrc`
 	- `.oh-my-zsh/`
-	- installed brew packages in `Brewfile`
+	- move installed brew packages into `Brewfile`
 	
 * **Setup Mac** importing, just simply run `setup-mac.sh`, which run through the following sequence 
 	- check if brew is installed, install it
@@ -21,7 +21,33 @@ Personal dotfiles
 	- `cd ~/dotfiles` commit the changes
 	- for keeping track of installed brew packages, using a git hook to auto update and commit `Brewfile`
 	- then `git push` to push the changes and the auto commit for `Brewfile` 
+	- For vim plugin syncing which is my main focus check below
 
+## VIM 
+### Adding Plugins via Pathogen
+```sh
+cd ./.vim/bundle
+git submodule add http://github.com/tpope/vim-fugitive.git
+```
+Using git hook to auto commit the submodule added using the `repo-name` like so `added ${repo_name} plugin`. So, anytime we decide to push we can push the new update 
+
+### Updating Plugins 
+#### Single Update
+```sh
+cd ~/.vim/bundle/${pluginName}
+git pull origin master
+``` 
+#### All Update
+```sh
+git submodule foreach git pull origin master
+```
+#### Remove Update
+```sh
+cd ~/.vim/bundle
+git submodule deinit <submodule-name>    
+git rm <submodule-name>
+```
+Using git hook to auto commit the submodule removed using the `repo-name` like so `removed ${repo_name} plugin`. So, anytime we decide to push we can push the new update 
 
 ## Term/ITerm theme
 * [Space Gray](theme/spacegray.itermcolors)
