@@ -27,15 +27,27 @@ commit_brew_file "Updated list with installed brew packages"
 echo "Make Brefile done."
 }
 
+brew_install_fn () {
+# check if it was installed before now or not 
+which -s brew
+if [[ $? != 0 ]] ; then
+    # Install Homebrew
+    ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+else
+   echo "Brew installed" 
+fi
+
+}
 
 case ACTION in 
 	BREW_INSTALL)
+	brew_install_fn
 	;;
 	MAKE_BREWFILE)
 	make_brewfile_fn
 	;;
 	*)
-	echo "No action specified, skippign brew.sh"
+	echo "No action specified, skipping brew.sh"
 	;;
 esac
 
