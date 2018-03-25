@@ -7,14 +7,6 @@ git clone --recursive https://github.com/theo4u/dotfiles.git
 ```
 
 ## Configuration / Automation
-* **Backup** simply run `make.sh` to start backup of 
-	- `vim/` our bundles/installed plugins, in git submodule form
-	- `.vimrc` 
-	- `.bash_profile`
-	- `.zshrc`
-	- `.oh-my-zsh/`
-	- move installed brew packages into `Brewfile`
-	
 * **Setup Mac** importing, just simply run `setup-mac.sh`, which run through the following sequence 
 	- check if brew is installed, install it
 	- install packages from `Brewfile`
@@ -24,7 +16,7 @@ git clone --recursive https://github.com/theo4u/dotfiles.git
 	- run through mac default configurations (hide/show dock)
 * **Syncing Files** keeping files updated for dotfiles and brew installed packages
 	- `cd ~/dotfiles` commit the changes
-	- for keeping track of installed brew packages, using a git hook to auto update and commit `Brewfile`
+	- for keeping track of installed brew packages, using a git hook to auto update and commit `Brewfile`(no need to think of this)
 	- then `git push` to push the changes and the auto commit for `Brewfile` 
 	- For vim plugin syncing which is my main focus check below
 
