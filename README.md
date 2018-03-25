@@ -11,6 +11,7 @@ git clone --recursive https://github.com/theo4u/dotfiles.git
 	- check if brew is installed, install it
 	- install packages from `Brewfile`
         - check if git was installed, if not do `brew install git`
+	- Oh my Zsh installation
 	- link dotfiles to home directory
 	- install vim bundles `.vim/bundles`
 	- run through mac default configurations (hide/show dock)
