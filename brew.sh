@@ -36,7 +36,11 @@ if [[ $? != 0 ]] ; then
 else
    echo "Brew installed" 
 fi
+}
 
+install_brewfile_fn () {
+# install brew packages from Brewfile
+brew bundle
 }
 
 case ACTION in 
@@ -45,6 +49,9 @@ case ACTION in
 	;;
 	MAKE_BREWFILE)
 	make_brewfile_fn
+	;;
+	INSTALL_BREWFILE)
+	install_brewfile_fn
 	;;
 	*)
 	echo "No action specified, skipping brew.sh"

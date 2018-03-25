@@ -9,10 +9,9 @@ git clone --recursive https://github.com/theo4u/dotfiles.git
 ## Configuration / Automation
 * **Setup Mac** importing, just simply run `setup-mac.sh`, which run through the following sequence 
 	- check if brew is installed, install it
-	- install packages from `Brewfile`
-        - check if git was installed, if not do `brew install git`
 	- Oh my Zsh installation
 	- link dotfiles to home directory
+	- install packages from `Brewfile`
 	- install vim bundles `.vim/bundles`
 	- run through mac default configurations (hide/show dock)
 * **Syncing Files** keeping files updated for dotfiles and brew installed packages
