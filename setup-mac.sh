@@ -11,6 +11,9 @@ source makesymlinks.sh
 echo "Install brew packages"
 source brew.sh INSTALL_BREWFILE
 
+echo "Initialize git hooks"
+source hooks.sh
+
 echo "Setting Up Macbook defaults"
 source macdefaults.sh
 
