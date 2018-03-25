@@ -1,6 +1,11 @@
 # dotfiles
 Personal dotfiles
 
+## Cloining / replicating
+```sh
+git clone --recursive https://github.com/theo4u/dotfiles.git
+```
+
 ## Configuration / Automation
 * **Backup** simply run `make.sh` to start backup of 
 	- `vim/` our bundles/installed plugins, in git submodule form
@@ -47,7 +52,10 @@ cd ~/.vim/bundle
 git submodule deinit <submodule-name>    
 git rm <submodule-name>
 ```
-Using git hook to auto commit the submodule removed using the `repo-name` like so `removed ${repo_name} plugin`. So, anytime we decide to push we can push the new update 
+Using git hook to auto commit the submodule after triggering `git submodule update` automatically too (keeping check of the current state of submodules) 
+* removed using the `repo-name` like so `removed ${repo_name} plugin`. 
+* any submodule changes  like so `Updated Plugins`. 
+So, anytime we decide to push we can push the new update 
 
 ## Term/ITerm theme
 * [Space Gray](theme/spacegray.itermcolors)
