@@ -1,0 +1,24 @@
+#!/bin/sh
+
+check_brewfile_modifications () {
+# list modified file
+modified=$(git ls-files -m)
+brewfile="Brewfile"
+# check if it contains our `Brewfile`
+if [[ $modified =~ $brewfile ]];
+then 
+  git add Brewfile
+  git commit "HOOKMSG: Brewfile updated"
+fi
+}
+
+# check if the commit message contains "HooKMSG:*" so we skip it, else we do some checking for Brewfile
+last_commit_msg = $(git log -1 HEAD)
+if  [[ $last_commit_msg == HOOKMSG* ]] ;
+then
+	echo "Skipping hook, since it originated from a hook"
+else
+	echo "Checking if any new modification to brew packages"
+	../brew.sh MAKE_BREWFILE
+	check_brewfile_modifications
+fi

@@ -17,7 +17,7 @@ git clone --recursive https://github.com/theo4u/dotfiles.git
 * **Syncing Files** keeping files updated for dotfiles and brew installed packages
 	- `cd ~/dotfiles` commit the changes
 	- for keeping track of installed brew packages, using a git hook to auto update and commit `Brewfile`(no need to think of this)
-	- then `git push` to push the changes and the auto commit for `Brewfile` 
+	- then `git push` to push the changes and the auto committed `Brewfile` 
 	- For vim plugin syncing which is my main focus check below
 
 ## VIM 
