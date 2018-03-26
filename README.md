@@ -4,8 +4,6 @@ Personal dotfiles
 ## Cloining / replicating
 ```sh
 git clone --recursive https://github.com/theo4u/dotfiles.git
-cd
-chmod +x setup-mac.sh
 ```
 
 ## Configuration / Automation
