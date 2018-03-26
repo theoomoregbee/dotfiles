@@ -1,6 +1,6 @@
 #!/bin/bash
 echo "Install brew"
-sorurce brew.sh BREW_INSTALL
+source brew.sh BREW_INSTALL
 
 echo "setting up oh my zhs"
 source zsh.sh

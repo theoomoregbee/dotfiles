@@ -43,7 +43,7 @@ install_brewfile_fn () {
 brew bundle
 }
 
-case ACTION in 
+case $ACTION in 
 	BREW_INSTALL)
 	brew_install_fn
 	;;
