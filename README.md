@@ -4,10 +4,12 @@ Personal dotfiles
 ## Cloining / replicating
 ```sh
 git clone --recursive https://github.com/theo4u/dotfiles.git
+cd
+chmod +x setup-mac.sh
 ```
 
 ## Configuration / Automation
-* **Setup Mac** importing, just simply run `setup-mac.sh`, which run through the following sequence 
+* **Setup Mac** importing, just simply run `./setup-mac.sh`, which run through the following sequence 
 	- check if brew is installed, install it
 	- Oh my Zsh installation
 	- link dotfiles to home directory
