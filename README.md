@@ -12,7 +12,6 @@ git clone --recursive https://github.com/theo4u/dotfiles.git
 	- Oh my Zsh installation
 	- link dotfiles to home directory
 	- install packages from `Brewfile`
-	- install vim bundles `.vim/bundles`
 	- run through mac default configurations (hide/show dock)
 * **Syncing Files** keeping files updated for dotfiles and brew installed packages
 	- `cd ~/dotfiles` commit the changes
