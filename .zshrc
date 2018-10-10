@@ -93,3 +93,13 @@ source $ZSH/oh-my-zsh.sh
 # this is just for showing nothing instead
 # prompt_context () {  }
  source ~/.bash_profile
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+eval "$(direnv hook zsh)"
+
+# tabtab source for jhipster package
+# uninstall by removing these lines or running `tabtab uninstall jhipster`
+[[ -f /Users/theophy/dev/lyshnia/eexcel/node_modules/tabtab/.completions/jhipster.zsh ]] && . /Users/theophy/dev/lyshnia/eexcel/node_modules/tabtab/.completions/jhipster.zsh

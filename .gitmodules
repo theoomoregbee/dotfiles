@@ -55,3 +55,9 @@
 [submodule ".vim/bundle/vim-jsx"]
 	path = .vim/bundle/vim-jsx
 	url = https://github.com/mxw/vim-jsx.git
+[submodule ".vim/bundle/vim-css-color"]
+	path = .vim/bundle/vim-css-color
+	url = https://github.com/ap/vim-css-color.git
+[submodule ".vim/bundle/vim-carbon-now-sh"]
+	path = .vim/bundle/vim-carbon-now-sh
+	url = https://github.com/kristijanhusak/vim-carbon-now-sh.git
