@@ -103,3 +103,6 @@ eval "$(direnv hook zsh)"
 # tabtab source for jhipster package
 # uninstall by removing these lines or running `tabtab uninstall jhipster`
 [[ -f /Users/theophy/dev/lyshnia/eexcel/node_modules/tabtab/.completions/jhipster.zsh ]] && . /Users/theophy/dev/lyshnia/eexcel/node_modules/tabtab/.completions/jhipster.zsh
+
+# https://stackoverflow.com/questions/46402772/failed-to-install-android-sdk-java-lang-noclassdeffounderror-javax-xml-bind-a
+# export JAVA_OPTS='-XX:+IgnoreUnrecognizedVMOptions --add-modules java.se.ee'

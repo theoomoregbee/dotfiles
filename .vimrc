@@ -53,3 +53,7 @@ set secure
 
 " mapped keys
 nnoremap <C-n> :NERDTree<CR>
+
+" https://github.com/Valloric/YouCompleteMe/issues/2218
+let $PATH='$HOME/.cargo/bin:/usr/bin:/usr/local/bin:/bin:/usr/sbin:/sbin'
+

@@ -1,0 +1,10 @@
+*~
+.DS_Store
+assets/images
+.idea
+node_modules
+**/*.swp
+**/*.swo
+**/*.swn
+**/*.swm
+.envrc
