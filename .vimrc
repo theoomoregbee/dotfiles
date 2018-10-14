@@ -51,6 +51,9 @@ set splitright
 set exrc
 set secure
 
+" for swap files
+set directory=~/.vim/swapfiles//
+
 " mapped keys
 nnoremap <C-n> :NERDTree<CR>
 
