@@ -19,6 +19,17 @@ git clone --recursive https://github.com/theo4u/dotfiles.git
 	- then `git push` to push the changes and the auto committed `Brewfile` 
 	- For vim plugin syncing which is my main focus check below
 
+## GIT 
+
+Git aliases like 
+  * `gp` for `git pull`
+  * `gpu` for `git push`
+  * `gco branchname` for `git checkout branchname`
+  * `gcb branchname` for `git checkout -b branchname`
+  * `gbd branchname` for `git branch -D branchname`
+  * etc. more in [.bash_profile](https://github.com/theo4u/dotfiles/blob/cde99ee917cf76c72003cf3ae4b2fc1de57fc302/.bash_profile#L14)
+
+
 ## VIM 
 ### Adding Plugins via Pathogen
 ```sh
