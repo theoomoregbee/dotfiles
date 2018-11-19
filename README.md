@@ -23,7 +23,7 @@ git clone --recursive https://github.com/theo4u/dotfiles.git
 
 Git aliases like 
   * `gp` for `git pull`
-  * `gpu` for `git push`
+  * `gpush` for `git push`
   * `gco branchname` for `git checkout branchname`
   * `gcb branchname` for `git checkout -b branchname`
   * `gbd branchname` for `git branch -D branchname`
