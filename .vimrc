@@ -56,6 +56,22 @@ set directory=~/.vim/swapfiles//
 
 " mapped keys
 nnoremap <C-n> :NERDTree<CR>
+nnoremap <C-f> :NERDTreeFind<CR>
+" map <leader>r :NERDTreeFind<CR>
+
+" Disable arrow keys (force good habits): not easy damn! can't do without arrow keys
+" nnoremap <up> <nop>
+" nnoremap <down> <nop>
+" nnoremap <left> <nop>
+" nnoremap <right> <nop>
+" inoremap <up> <nop>
+" inoremap <down> <nop>
+" inoremap <left> <nop>
+" inoremap <right> <nop>
+" vnoremap <up> <nop>
+" vnoremap <down> <nop>
+" vnoremap <left> <nop>
+" vnoremap <right> <nop>
 
 " https://github.com/Valloric/YouCompleteMe/issues/2218
 let $PATH='$HOME/.cargo/bin:/usr/bin:/usr/local/bin:/bin:/usr/sbin:/sbin'
