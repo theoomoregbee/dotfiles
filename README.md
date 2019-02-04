@@ -29,6 +29,10 @@ Git aliases like
   * `gbd branchname` for `git branch -D branchname`
   * etc. more in [.bash_profile](https://github.com/theo4u/dotfiles/blob/cde99ee917cf76c72003cf3ae4b2fc1de57fc302/.bash_profile#L14)
 
+## Export secure Content
+
+To export secure content like `NPM_TOKEN` you can create `~/.bash_profile_secure` and it will be automatically exported. check [.zshrc](https://github.com/theo4u/dotfiles/blob/master/.zshrc#L98)
+
 
 ## VIM 
 ### Adding Plugins via Pathogen

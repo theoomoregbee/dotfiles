@@ -8,3 +8,4 @@ node_modules
 **/*.swn
 **/*.swm
 .envrc
+~/.bash_profile_secure
