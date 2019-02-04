@@ -31,7 +31,7 @@ Git aliases like
 
 ## Export secure Content
 
-To export secure content like `NPM_TOKEN` you can create `~/.bash_profile_secure` and it will be automatically exported. check [.zshrc](https://github.com/theo4u/dotfiles/blob/master/.bash_profile#L11)
+To export secure content like `NPM_TOKEN` you can create `~/.bash_profile_secure` and it will be automatically exported. check [.bash_profile](https://github.com/theo4u/dotfiles/blob/master/.bash_profile#L11)
 
 
 ## VIM 
