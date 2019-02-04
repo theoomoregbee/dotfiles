@@ -7,6 +7,9 @@ export PATH=$PATH:$ANDROID_HOME/emulator
 export PATH=$PATH:/Users/theophy/ngrok
 export PATH=$PATH:/Users/theophy/Library/Python/2.7/bin
 
+# source secured bash profile, i.e profile with secure content
+source ~/.bash_profile_secure
+
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
