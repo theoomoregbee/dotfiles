@@ -61,3 +61,6 @@
 [submodule ".vim/bundle/vim-carbon-now-sh"]
 	path = .vim/bundle/vim-carbon-now-sh
 	url = https://github.com/kristijanhusak/vim-carbon-now-sh.git
+[submodule ".vim/bundle/nord-vim"]
+	path = .vim/bundle/nord-vim
+	url = https://github.com/arcticicestudio/nord-vim
