@@ -5,7 +5,7 @@ filetype plugin indent on
 let g:airline_theme='simple'
 let g:javascript_plugin_flow = 1
 let g:jsx_ext_required = 0
-colorscheme spacegray
+colorscheme nord " spacegray
 set runtimepath^=~/.vim/bundle/ctrlp.vim
 set rtp+=/usr/local/opt/fzf
 

@@ -1,11 +1,14 @@
-export PATH="/Users/theophy/mongodb/bin:/usr/local/mysql/bin:$PATH"
+export PATH="$HOME/mongodb/bin:/usr/local/mysql/bin:$PATH"
 export ANDROID_HOME=$HOME/Library/Android/sdk
+export ANDROID_SDK_ROOT=$ANDROID_HOME
+export ANDROID_AVD_HOME=$ANDROID_HOME/.android/avd
+export PATH=$PATH:$ANDROID_SDK_ROOT/emulator
 export PATH=$PATH:$ANDROID_HOME/tools
 export PATH=$PATH:$ANDROID_HOME/tools/bin
 export PATH=$PATH:$ANDROID_HOME/platform-tools
-export PATH=$PATH:$ANDROID_HOME/emulator
-export PATH=$PATH:/Users/theophy/ngrok
-export PATH=$PATH:/Users/theophy/Library/Python/2.7/bin
+export PATH=$PATH:$ANDROID_HOME/build-tools/28.0.3
+export PATH=$PATH:$HOME/ngrok
+export PATH=$PATH:/$HOME/Library/Python/2.7/bin
 
 # source secured bash profile, i.e profile with secure content
 source ~/.bash_profile_secure

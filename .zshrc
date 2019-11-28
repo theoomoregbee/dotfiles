@@ -2,7 +2,7 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH=/Users/theophy/.oh-my-zsh
+export ZSH=/$HOME/.oh-my-zsh
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
@@ -102,7 +102,13 @@ eval "$(direnv hook zsh)"
 
 # tabtab source for jhipster package
 # uninstall by removing these lines or running `tabtab uninstall jhipster`
-[[ -f /Users/theophy/dev/lyshnia/eexcel/node_modules/tabtab/.completions/jhipster.zsh ]] && . /Users/theophy/dev/lyshnia/eexcel/node_modules/tabtab/.completions/jhipster.zsh
+[[ -f /$HOME/dev/lyshnia/eexcel/node_modules/tabtab/.completions/jhipster.zsh ]] && . /$HOME/dev/lyshnia/eexcel/node_modules/tabtab/.completions/jhipster.zsh
 
 # https://stackoverflow.com/questions/46402772/failed-to-install-android-sdk-java-lang-noclassdeffounderror-javax-xml-bind-a
 # export JAVA_OPTS='-XX:+IgnoreUnrecognizedVMOptions --add-modules java.se.ee'
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/$HOME/google-cloud-sdk/path.zsh.inc' ]; then . '/$HOME/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/$HOME/google-cloud-sdk/completion.zsh.inc' ]; then . '/$HOME/google-cloud-sdk/completion.zsh.inc'; fi
