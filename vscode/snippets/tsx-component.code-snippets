@@ -1,0 +1,16 @@
+{
+	"react tsx function component": {
+		"prefix": "tsx-comp",
+		"body": [
+			"import React from 'react'",
+			"",
+			"interface I$1Props { }",
+			"const $1 = ({}: I$1Props) => {",
+			"return <div>$0</div>",
+			"}",
+			"",
+			"export default $1"
+		],
+		"description": "react tsx functional component"
+	}
+}
