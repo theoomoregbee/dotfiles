@@ -65,6 +65,9 @@ So, anytime we decide to push we can push the new update
 
 ## Term/ITerm theme
 * [Space Gray](theme/spacegray.itermcolors)
+* [Profile](/iterm_profile.json)
+
+> Profile requires roboto powerline font to be installed. See https://github.com/powerline/fonts#quick-installation
 
 ## VIM Cheat sheet
 ### VIM SESSION
