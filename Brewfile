@@ -1,7 +1,7 @@
 tap "cloudfoundry/tap"
 tap "homebrew/core"
 tap "homebrew/bundle"
-tap "caskroom/cask"
+tap "homebrew/cask"
 brew "ack"
 brew "cmake"
 brew "curl", args: ["with-libssh2"]
